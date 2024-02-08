@@ -1,0 +1,9 @@
+$(function(){
+  $('[data-toggle="tooltip"]').tooltip();
+});
+
+function img_err(x, src)
+{
+  x.onerror = null;
+  x.src = src;
+}
