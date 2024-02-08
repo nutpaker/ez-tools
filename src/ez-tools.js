@@ -4,7 +4,7 @@ import HookDetail from "./modules/hook-detail";
 import Download from "./modules/download";
 import Cover from "./modules/cover";
 import Setting from "./setting";
-
+import './template';
 
 //working
 if ([

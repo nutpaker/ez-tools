@@ -29,6 +29,7 @@
     "workbox-webpack-plugin": "^7.0.0"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.33",
     "hash.js": "^1.1.7",
     "jquery": "^3.7.1"
   }
