@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EZ Tools (TorrentDD)
 // @namespace    http://tampermonkey.net/
-// @version      1.1.1
+// @version      1.1.2
 // @description  tools that will help you see new items and make it easier for you to use the website to load bittorrent.
 // @author       NutPaker
 // @icon         https://avatars.githubusercontent.com/u/41352329?s=96&v=4
