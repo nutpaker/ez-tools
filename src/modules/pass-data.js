@@ -11,6 +11,7 @@ class PassData {
     id;
     title;
     link;
+    downloadCount;
     download;
     category;
     size;
@@ -63,13 +64,16 @@ class PassData {
         this.cover = $('a',this.td.get(1)).first()?.attr('href');
 
 
-        // //detail link and id
+        //detail link and id
         this.detailLink = _title.attr('href');
         this.detailId   = /id=([0-9]+)/.exec(this.detailLink)[ 1 ];
 
-        // //download
-        // this.elements.download = $('td[width="900"] a>img[src="pic/downloaded.gif"]', this.element).parent();
-        // this.download = this.elements.download?.attr('href');
+        //download
+        this.elements.download = $('button',this.td.get(1))?.first();
+        this.download = this.elements.download?.attr('onclick')?.replace("document.location = '","")?.replace("';","");
+
+                //download Count
+                this.downloadCount   = this.elements.download?.is("[data-original-title]");
 
         //category
         this.category = $('a', this.td.get(0)).first()?.attr('href').replace('https://www.torrentdd.com/?cate=', '');
@@ -97,7 +101,8 @@ class PassData {
         Log(this.hash, `cover: ${this.cover}`);
         Log(this.hash, `detail Link: ${this.detailLink}`);
         Log(this.hash, `detail Id: ${this.detailId}`);
-        // Log(this.hash, `download: ${this.download}`);
+        Log(this.hash, `download Count: ${this.downloadCount}`);
+        Log(this.hash, `download: ${this.download}`);
         Log(this.hash, `category: ${this.category}`);
         Log(this.hash, `size: ${this.size}`);
         Log(this.hash, `downloaded: ${this.downloaded}`);

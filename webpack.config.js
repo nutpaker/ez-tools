@@ -26,7 +26,7 @@ const config = {
     plugins: [
         new HtmlWebpackPlugin({
             template: 'index.html',
-            //template: 'browse.html',
+            // template: 'browse.html',
         }),
 
         new webpack.ProvidePlugin({

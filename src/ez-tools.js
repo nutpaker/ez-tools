@@ -8,14 +8,9 @@ import './template';
 
 //working
 if ([
-    // '/viewno18.php',
-    // '/viewbr.php',
-    // '/upfinish.php',
-    // '/viewno18sb.php',
-    // '/viewbrsb.php',
     '/browse.php',
     '/browse18.php'
-].includes(window.location.pathname)) {
+].includes(window.location.pathname) || ture) {
 
     
 let eHead = $('table > thead > tr');
@@ -42,11 +37,8 @@ tr.each((index, item) => {
         data,
     });
 
-    // $(data.td.get(0)).after("<td></td>");
-    // console.log(Setting.preview);
     //add column cover
     if (Setting.preview === true) {
-        // $(data.td.get(0)).after("<td></td>");
         $(data.td.get(0)).after(cover.html);
     }
 
@@ -56,7 +48,8 @@ tr.each((index, item) => {
     // //add column cover
     // $(data.td.get(1)).append(button.html);
 
-    // //downloaded
+    //downloaded
+    if(data.downloadCount) Download.downloaded({ data});
     // if (Cache.downloaded[data.detailId] !== undefined) Download.downloaded({ data });
 
     // //remove bg first column
@@ -66,9 +59,10 @@ tr.each((index, item) => {
     // }
 
     //row
+    console.log(cover);
     rows.push({
         data: data,
-        // cover: cover,
+        cover: cover,
         // thank: thank,
         // button: button,
     });

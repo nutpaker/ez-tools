@@ -3,6 +3,6 @@ import './styles/tamplate.scss';
 // import "@fancyapps/ui";
 import Setting from "./setting";
 //preview cover
-let previewCover = 'img.preview{max-height:' + Setting.previewMaxHeight + 'px;max-width:' + Setting.previewMaxWidth + 'px;}';
+let previewCover = 'img.preview{max-height:' + Setting.previewMaxHeight + 'px;max-width:' + Setting.previewMaxWidth + 'px;cursor: pointer;}';
 
 GM_addStyle(previewCover);

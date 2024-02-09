@@ -1,6 +1,15 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css');
 @import url('https://www.jqueryscript.net/demo/Responsive-jQuery-Modal-Window-Plugin-with-CSS3-Transitions-Custombox/src/jquery.custombox.css');
 
+
+
+// img.preview{
+//     max-height:80px;
+//     max-width:120px;
+//     cursor: pointer;
+// }
+
+
 //loading
 .lds-grid {
     display: inline-block;
@@ -214,7 +223,7 @@
 
 //downloaded
 .downloaded {
-    color: #909090;
+    color: #909090 !important;
 }
 
 

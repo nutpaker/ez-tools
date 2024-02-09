@@ -70,8 +70,8 @@ class Cover {
             this.preview.show();
             this.previewStyle();
 
-            // if (Setting.previewHover === true) this.previewInit(this.preview);
-            // if (Setting.titleHover === true) this.previewInit(this.data.elements.title);
+            if (Setting.previewHover === true) this.previewInit(this.preview);
+            if (Setting.titleHover === true) this.previewInit(this.data.elements.title);
 
             //touch progress bar
             this.data.head.touchProgressBar();
@@ -102,8 +102,7 @@ class Cover {
             });
 
         //hover
-        // $('body').append(this.hover.element.append(this.hover.img));
-        $('body').append(this.hover.element);
+        $('body').append(this.hover.element.append(this.hover.img));
     }
 
     previewStyle() {

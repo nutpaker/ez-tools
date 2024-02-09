@@ -82,10 +82,10 @@ class Download {
 
     static downloaded( { data } ) {
         //set cache downloaded
-        Cache.set({ key : 'downloaded', data : { key : data.detailId, value : Cache.timestamp() } });
+        // Cache.set({ key : 'downloaded', data : { key : data.detailId, value : Cache.timestamp() } });
+        // if (Setting.downloaded === false) return;
 
-        if (Setting.downloaded === false) return;
-
+    
         Log(data.hash, `downloaded ${data.hash}`);
         data.elements.title.addClass('downloaded');
     }

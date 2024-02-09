@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         EZ Tools (TorrentDD)
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.1
 // @description  tools that will help you see new items and make it easier for you to use the website to load bittorrent.
 // @author       NutPaker
 // @icon         https://avatars.githubusercontent.com/u/41352329?s=96&v=4
@@ -13,7 +13,7 @@
 // @match        https://www.torrentdd.com/details.php*
 // @grant        GM_addStyle
 // @grant        GM_xmlhttpRequest
-// @require      https://raw.githubusercontent.com/nutpaker/ez-tools/master/dist/ez-tools.js?version=1.0
+// @require      https://raw.githubusercontent.com/nutpaker/ez-tools/master/dist/ez-tools.js?version=1.1
 // @updateURL    https://raw.githubusercontent.com/nutpaker/ez-tools/master/ez-tools.user.js
 // @downloadURL  https://raw.githubusercontent.com/nutpaker/ez-tools/master/ez-tools.user.js
 // @supportURL   https://github.com/nutpaker/ez-tools/issues
@@ -61,6 +61,25 @@
 // @connect      uppic.xyz
 // @connect      gifyu.com
 // @connect      imgvb.com
-// @connect      up-pic.com
+// @connect      up-pic.com ///
+// @connect      uppic.cloud
+// @connect      postimg.cc
+// @connect      bestuppic.com
+// @connect      up2pic.net
+// @connect      xara.com
+// @connect      uppic.net
+// @connect      expdirclk.com
+// @connect      imgz.io
+// @connect      googleusercontent.com
+// @connect      4th.in
+// @connect      funkyimg.com
+// @connect      notion.site
+// @connect      upload.ee
+// @connect      google.co.th
+// @connect      imageupload.io
+// @connect      discordapp.com
 // @connect      *
+
+
+
 // ==/UserScript==
